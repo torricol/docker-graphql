@@ -26,3 +26,4 @@ COPY --from=prod-deps /app/node_modules ./node_modules
 COPY --from=builder /app/dist ./dist
 
 CMD [ "node","dist/main.js"]
+
