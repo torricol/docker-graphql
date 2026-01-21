@@ -28,6 +28,7 @@ jobs:
     - name: Build Docker Image
       run: |
          docker build -t lmtf/docker-graphql:0.0.2 .
+         docker build -t lmtf/docker-graphql:latest .
       
     - name: Push Docker Image
       run: |
